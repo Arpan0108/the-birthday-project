@@ -59,7 +59,7 @@ A beautiful, vertically scrollable birthday website designed with love, featurin
 ## File Structure 📁
 
 ```
-bject/
+bdject/
 ├── index.html          # Main HTML structure
 ├── styles.css          # All styling and animations
 ├── script.js           # Interactive functionality
