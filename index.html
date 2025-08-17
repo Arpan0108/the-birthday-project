@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<meta name="theme-color" content="#FFF5F5" />
+		<title>Happy Birthday</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@300;400;600&family=Great+Vibes&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="petals-container" id="petals"></div>
+
+		<div class="audio-controls">
+			<div
+				class="music-toggle"
+				id="musicToggle"
+				title="Toggle Music (Press 'M')"
+			>
+				<span class="music-icon">🎵</span>
+			</div>
+		</div>
+
+		<div id="scrollTopBtn" class="scroll-top-btn">
+			<span>↑</span>
+		</div>
+
+		<audio id="backgroundMusic" loop preload="auto">
+			<source src="bdaymusic.mp3" type="audio/mp3" />
+			Your browser does not support the audio element.
+		</audio>
+
+		<section class="landing" id="landing">
+			<div class="landing-container">
+				<div class="hero-content">
+					<div class="photo-container">
+						<div class="firework"></div>
+						<div class="firework"></div>
+						<div class="firework"></div>
+						<div class="firework"></div>
+						<div class="firework"></div>
+						<div class="firework"></div>
+						<div class="firework"></div>
+						<div class="firework"></div>
+
+						<div class="photo-placeholder">
+							<img
+								src="resourses/1.png"
+								alt="Birthday Photo"
+								class="main-photo"
+							/>
+						</div>
+						<div class="glow-effect"></div>
+					</div>
+					<h1 class="main-title">Happy Birthday, (Name)</h1>
+					<p class="subtitle">
+						You deserve a world more beautiful than this one ever will be.
+					</p>
+					<div class="scroll-indicator">
+						<span>Scroll to continue the story</span>
+						<div class="arrow-down">↓</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="memory-lane" id="memoryLane">
+			<div class="container">
+				<h2 class="section-title">Memory Lane</h2>
+				<div class="memories-slider">
+					<div class="memory-item" data-frame-number="01">
+						<div class="memory-photo">
+							<img
+								src="resourses/2.png"
+								alt="Memory Photo 1"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="02">
+						<div class="memory-photo">
+							<img
+								src="resourses/3.png"
+								alt="Memory Photo 2"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="03">
+						<div class="memory-photo">
+							<img
+								src="resourses/4.png"
+								alt="Memory Photo 3"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="04">
+						<div class="memory-photo">
+							<img
+								src="resourses/5.png"
+								alt="Memory Photo 4"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="05">
+						<div class="memory-photo">
+							<img
+								src="resourses/6.png"
+								alt="Memory Photo 5"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="06">
+						<div class="memory-photo">
+							<img
+								src="resourses/7.png"
+								alt="Memory Photo 6"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="07">
+						<div class="memory-photo">
+							<img
+								src="resourses/8.png"
+								alt="Memory Photo 7"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="08">
+						<div class="memory-photo">
+							<img
+								src="resourses/9.png"
+								alt="Memory Photo 8"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="09">
+						<div class="memory-photo">
+							<img
+								src="resourses/10.png"
+								alt="Memory Photo 9"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="10">
+						<div class="memory-photo">
+							<img
+								src="resourses/11.png"
+								alt="Memory Photo 10"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="11">
+						<div class="memory-photo">
+							<img
+								src="resourses/12.png"
+								alt="Memory Photo 11"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="12">
+						<div class="memory-photo">
+							<img
+								src="resourses/13.png"
+								alt="Memory Photo 12"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<!-- Duplicate first 6 images for seamless loop -->
+					<div class="memory-item" data-frame-number="13">
+						<div class="memory-photo">
+							<img
+								src="resourses/2.png"
+								alt="Memory Photo 1"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="14">
+						<div class="memory-photo">
+							<img
+								src="resourses/3.png"
+								alt="Memory Photo 2"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="15">
+						<div class="memory-photo">
+							<img
+								src="resourses/4.png"
+								alt="Memory Photo 3"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="16">
+						<div class="memory-photo">
+							<img
+								src="resourses/5.png"
+								alt="Memory Photo 4"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="17">
+						<div class="memory-photo">
+							<img
+								src="resourses/6.png"
+								alt="Memory Photo 5"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+					<div class="memory-item" data-frame-number="18">
+						<div class="memory-photo">
+							<img
+								src="resourses/7.png"
+								alt="Memory Photo 6"
+								class="memory-img"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="letter-section" id="letterSection">
+			<div class="container">
+				<h2 class="section-title">A Letter For You</h2>
+				<div class="envelope-container">
+					<div class="letter" id="letter">
+						<div class="letter-content scribble-content">
+							<div class="scribble-line" data-delay="0"></div>
+							<div class="scribble-line" data-delay="300"></div>
+							<div class="scribble-line" data-delay="600"></div>
+							<div class="scribble-line" data-delay="900"></div>
+							<div class="scribble-line" data-delay="1200"></div>
+							<div class="scribble-line" data-delay="1500"></div>
+							<div class="scribble-line" data-delay="1800"></div>
+							<div class="scribble-line short" data-delay="2100"></div>
+							<div class="scribble-line signature" data-delay="2400"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="letter-fullscreen" id="letterFullscreen">
+			<div class="letter-fullscreen-content">
+				<button class="close-letter" id="closeLetter">×</button>
+				<div class="letter-content">
+					<p class="letter-line title">
+						A Letter for the Girl Who Feels Deeply
+					</p>
+					<p class="letter-line">Dear you,</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">(Text here)</p>
+					<p class="letter-line">Happy Birthday</p>
+					<p class="letter-line">
+						And thank you for being just exactly the way you are.
+					</p>
+					<p class="letter-line signature">– From someone who _________</p>
+				</div>
+			</div>
+		</div>
+
+		<section class="story-cards" id="storyCards">
+			<div class="container">
+				<h2 class="section-title">Your Story in Cards</h2>
+				<div class="cards-container">
+					<div class="story-card">
+						<div class="card-icon">
+							<img
+								src="resourses/happy.gif"
+								alt="Happy celebration"
+								class="card-gif"
+							/>
+						</div>
+						<h3>Here's how happy I am for you today</h3>
+					</div>
+					<div class="story-card">
+						<div class="card-icon">
+							<img
+								src="resourses/daamn.gif"
+								alt="Impressed reaction"
+								class="card-gif"
+							/>
+						</div>
+						<h3>How people react when you enter the room</h3>
+					</div>
+					<div class="story-card">
+						<div class="card-icon">
+							<img
+								src="resourses/fantastic.gif"
+								alt="Fantastic"
+								class="card-gif"
+							/>
+						</div>
+						<h3>If I had to describe you with ONE word</h3>
+					</div>
+					<div class="story-card">
+						<div class="card-icon">
+							<img src="resourses/sylvie.gif" alt="Badass" class="card-gif" />
+						</div>
+						<h3>The only person as badass as you</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="final-wish" id="finalWish">
+			<div class="container">
+				<div class="wish-content">
+					<h2 class="final-message">
+						Here's to the girl who makes everything feel a little lighter, a
+						little warmer, a little more worth it.
+					</h2>
+					<div class="cake-container">
+						<div class="cake">
+							<img
+								src="resourses/cake.png"
+								alt="Birthday Cake"
+								class="cake-image"
+							/>
+							<div class="dialogue-box">
+								<div class="dialogue-text">Click me!</div>
+								<div class="dialogue-arrow"></div>
+							</div>
+						</div>
+						<div class="sparkles"></div>
+					</div>
+					<p class="birthday-wish">
+						May this year bring you endless joy, beautiful moments, and all the
+						love your heart can hold. ✨
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<div class="magnify-overlay">
+			<img
+				src="resourses/cake.png"
+				alt="Magnified Birthday Cake"
+				class="magnified-cake"
+			/>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
